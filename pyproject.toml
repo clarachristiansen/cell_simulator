@@ -31,5 +31,8 @@ line-length = 120
 [tool.ruff.lint]
 select = ["I", "N", "E", "W"]
 
+[tool.ruff.lint.pep8-naming]
+extend-ignore-names = ["F", "F_*", "*_F", "*_pN"]
+
 [tool.coverage.run]
 omit = ["tests/*"]
